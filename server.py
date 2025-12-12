@@ -188,7 +188,4 @@ def home():
     }), 200
 
 if __name__ == '__main__':
-    logger.info("🚀 Starting Enhanced Verification Server...")
-    logger.info("📡 Server will save both video files and text data")
-    logger.info("📁 Files saved in: uploads/ directory")
-    app.run()
+    pass
