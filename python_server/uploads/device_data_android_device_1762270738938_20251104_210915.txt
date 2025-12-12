@@ -1,0 +1,31 @@
+=== DEVICE VERIFICATION DATA ===
+Timestamp: 2025-11-04 21:09:15
+Received At: 2025-11-04T21:09:15.279307
+
+--- DEVICE INFORMATION ---
+Device ID: android_device_1762270738938
+Is Compromised: False
+Platform: android
+IP Address: 106.51.173.77
+
+--- LOCATION DATA ---
+Latitude: 13.0555424
+Longitude: 80.1040327
+
+--- VIDEO INFORMATION ---
+Video Filename: REC4822990016556211269.mp4
+Video Size: 529301 bytes
+Video Saved As: mobile_liveness_android_device_1762270738938_20251104_210915.mp4
+
+--- RAW JSON DATA ---
+{
+  "device_id": "android_device_1762270738938",
+  "is_compromised": false,
+  "gps_location": {
+    "latitude": 13.0555424,
+    "longitude": 80.1040327
+  },
+  "ip_address": "106.51.173.77",
+  "timestamp": "2025-11-04T21:09:09.800854",
+  "platform": "android"
+}
