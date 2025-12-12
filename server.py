@@ -4,6 +4,8 @@ import logging
 import os
 import json
 from datetime import datetime
+from flask import send_from_directory
+
 
 # Configure logging
 logging.basicConfig(
@@ -175,6 +177,13 @@ def list_files():
         }), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+@app.route('/download/<filename>', methods=['GET'])
+def download_file(filename):
+    try:
+        return send_from_directory(UPLOAD_DIR, filename, as_attachment=False)
+    except Exception as e:
+        return jsonify({"error": str(e)}), 404
+
 
 @app.route('/', methods=['GET'])
 def home():
